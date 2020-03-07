@@ -38,12 +38,12 @@ def onpres():
             s=s+1;
     truerating=s/len(re)
     truerating=round(truerating,2);
-    Label(root,text=k,font=("Courier", 25)).pack()        
-    Label(root,text=re[0],fg='green').pack()
-    Label(root,text=re[1],fg='green').pack()
-    Label(root,text=re[2],fg='green').pack()
-    Label(root,text=re[3],fg='green').pack()
-    Label(root,text=re[4],fg='green').pack()  
+    Label(root,text=k,font=("Courier", 25),wraplength=800).pack()        
+    Label(root,text="1 ."+ re[0],fg='green',wraplength=1000).pack()
+    Label(root,text="2 ."+re[1],fg='green',wraplength=1000).pack()
+    Label(root,text="3 ."+re[2],fg='green',wraplength=1000).pack()
+    Label(root,text="4 ."+re[3],fg='green',wraplength=1000).pack()
+    Label(root,text="5 ."+re[4],fg='green',wraplength=1000).pack()  
     p="averagerating="+str(truerating) 
     Label(root,text=p,font=("Courier", 44)).pack()      
                                 
